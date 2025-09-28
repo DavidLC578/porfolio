@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
+import Button from "./ui/button"
 import { X, Download, Menu } from "lucide-react"
 
 const navItems = [
@@ -73,18 +74,18 @@ export function Navigation() {
                                     {item.name}
                                 </button>
                             ))}
-                            <button onClick={handleDownloadCV} variant="outline" size="sm" className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 ml-4 bg-transparent">
+                            <Button onClick={handleDownloadCV} variant="outline" size="sm" className="ml-4 bg-transparent">
                                 <Download className="w-4 h-4 mr-2" />
                                 CV
-                            </button>
+                            </Button>
                         </div>
                     </div>
 
                     {/* Mobile menu button */}
                     <div className="md:hidden">
-                        <button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
+                        <Button variant="ghost" size="sm" onClick={() => setIsOpen(!isOpen)}>
                             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </div>
@@ -104,10 +105,10 @@ export function Navigation() {
                             </button>
                         ))}
                         <div className="px-3 py-2">
-                            <button onClick={handleDownloadCV} variant="outline" size="sm" className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5 w-full bg-transparent">
-                                {/* <Download className="w-4 h-4 mr-2" /> */}
+                            <Button onClick={handleDownloadCV} variant="outline" size="sm" className="w-full bg-transparent">
+                                <Download className="w-4 h-4 mr-2" />
                                 Descargar CV
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>
