@@ -1,6 +1,7 @@
 import { BookOpen } from "lucide-react";
 import { Code, Database, Palette, Wrench } from "lucide-react"
 import Badge from "./ui/badge";
+import { Languages } from "lucide-react";
 
 export function SkillsSection() {
 
@@ -61,6 +62,11 @@ export function SkillsSection() {
         "Agile/Scrum",
     ]
 
+    const languages = [
+        { name: "Español", level: "Nativo", percentage: 100, flag: "🇪🇸" },
+        { name: "Inglés", level: "Fluido", percentage: 85, flag: "🇺🇸" },
+    ]
+
     return (
         <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/20">
             <div className="max-w-6xl mx-auto">
@@ -104,6 +110,36 @@ export function SkillsSection() {
                         );
                     })}
                 </div>
+
+                {/* Languages Card */}
+                <div className="text-card-foreground flex flex-col gap-1 rounded-xl border p-6  shadow-sm bg-card border-border mb-12">
+                    <div>
+                        <div className="flex items-center gap-3 text-card-foreground">
+                            <Languages className="size-10 text-primary bg-primary/10 rounded-xl p-2" />
+                            Idiomas
+                        </div>
+                    </div>
+                    <div className="space-y-4">
+                        {languages.map((language) => (
+                            <div key={language.name} className="space-y-2">
+                                <div className="flex justify-between items-center">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-lg">{language.flag}</span>
+                                        <span className="text-sm font-medium text-card-foreground">{language.name}</span>
+                                    </div>
+                                    <span className="text-sm text-muted-foreground">{language.level}</span>
+                                </div>
+                                <div className="w-full bg-primary/10 rounded-full h-2.5">
+                                    <div
+                                        className="bg-primary h-2.5 rounded-full"
+                                        style={{ width: `${language.percentage}%` }}
+                                    ></div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
                 {/* Additional Skills */}
                 <div className="text-card-foreground flex flex-col gap-1 rounded-xl border p-6  shadow-sm bg-card border-border">
                     <div className="flex items-center justify-center gap-3 mb-6">
