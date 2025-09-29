@@ -70,25 +70,26 @@ export function AboutSection() {
                                 </div>
                                 <div className="space-y-4">
                                     <div className="border-l-2 border-primary pl-4">
-                                        <h4 className="font-medium text-card-foreground">Bootcamp de Desarrollo Web Full Stack</h4>
-                                        <p className="text-sm text-muted-foreground">2024 - Presente</p>
-                                        <p className="text-sm text-muted-foreground mt-1">
-                                            Formación intensiva en tecnologías web modernas, metodologías ágiles y mejores prácticas de
-                                            desarrollo.
-                                        </p>
-                                    </div>
-                                    <div className="border-l-2 border-muted pl-4">
                                         <h4 className="font-medium text-card-foreground">Proyectos Personales</h4>
-                                        <p className="text-sm text-muted-foreground">2023 - Presente</p>
+                                        <p className="text-sm text-muted-foreground">2024 - Presente</p>
                                         <p className="text-sm text-muted-foreground mt-1">
                                             Desarrollo de aplicaciones web utilizando React, Next.js y otras tecnologías modernas.
                                         </p>
                                     </div>
                                     <div className="border-l-2 border-muted pl-4">
-                                        <h4 className="font-medium text-card-foreground">Cursos Online y Certificaciones</h4>
+                                        <h4 className="font-medium text-card-foreground">Programador en prácticas en Alten Spain</h4>
+                                        <p className="text-sm text-muted-foreground">Apr 2024 - Jun 2024</p>
+                                        <p className="text-sm text-muted-foreground mt-1">
+                                            Formación intensiva en tecnologías y frameworks modernos como Java, Spring boot, Docker, Git y herramientas de desarrollo como VS Code.
+                                            Centrado en el desarrollo de aplicaciones APIREST.
+                                        </p>
+                                    </div>
+                                    <div className="border-l-2 border-muted pl-4">
+                                        <h4 className="font-medium text-card-foreground">Grado Superior en Desarrollo de Aplicaciones Multiplataforma</h4>
                                         <p className="text-sm text-muted-foreground">2022 - 2024</p>
                                         <p className="text-sm text-muted-foreground mt-1">
-                                            Formación continua en plataformas como freeCodeCamp, Platzi y Udemy.
+                                            Curso de Grado Superior en Desarrollo de Aplicaciones Multiplataforma,
+                                            impartido por el Centro de Formación Profesional CampusFP de Alcalá de Henares.
                                         </p>
                                     </div>
                                 </div>
