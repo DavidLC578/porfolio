@@ -11,6 +11,12 @@ export function HeroSection() {
             element.scrollIntoView({ behavior: "smooth" })
         }
     }
+    const handleScrollToContact = () => {
+        const element = document.querySelector("#contact")
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" })
+        }
+    }
 
     return (
         <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
@@ -39,7 +45,7 @@ export function HeroSection() {
                         Ver Proyectos
                         <ArrowDown className="ml-2 h-4 w-4" />
                     </Button>
-                    <Button variant="outline" size="lg" className="text-base px-8 py-3 bg-transparent">
+                    <Button variant="outline" size="lg" className="text-base px-8 py-3 bg-transparent" onClick={handleScrollToContact}>
                         Contactar
                     </Button>
                 </div>
