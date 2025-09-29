@@ -49,7 +49,10 @@ export function Navigation() {
 
     const handleDownloadCV = () => {
         // This would typically download a PDF file
-        console.log("Downloading CV...")
+        const link = document.createElement("a");
+        link.href = "./cv.pdf";
+        link.download = "./cv.pdf";
+        link.click();
     }
 
     return (
@@ -58,7 +61,7 @@ export function Navigation() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo/Name */}
                     <div className="flex-shrink-0">
-                        <h1 className="text-xl font-bold text-foreground">Tu Nombre</h1>
+                        <h1 className="text-xl font-bold text-foreground">David</h1>
                     </div>
 
                     {/* Desktop Navigation */}
