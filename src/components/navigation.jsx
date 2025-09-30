@@ -51,7 +51,7 @@ export function Navigation() {
         // This would typically download a PDF file
         const link = document.createElement("a");
         link.href = "./cv.pdf";
-        link.download = "./cv.pdf";
+        link.download = "DavidLattanzioCV.pdf";
         link.click();
     }
 
