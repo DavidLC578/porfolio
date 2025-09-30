@@ -18,36 +18,14 @@ export function ProjectsSection() {
             featured: true,
         },
         {
-            id: 4,
-            title: "Weather App",
+            id: 2,
+            title: "Chronomaths",
             description:
-                "Aplicación del clima con pronóstico extendido, geolocalización, búsqueda por ciudad y visualización de datos meteorológicos. Integración con API externa y diseño adaptativo.",
-            image: "/weather-app-with-forecast-cards-and-location-searc.jpg",
-            technologies: ["JavaScript", "HTML5", "CSS3", "OpenWeather API", "Chart.js"],
-            demoUrl: "https://weather-app-demo.vercel.app",
-            githubUrl: "https://github.com/usuario/weather-app",
-            featured: false,
-        },
-        {
-            id: 5,
-            title: "Portfolio Personal",
-            description:
-                "Sitio web personal responsive con animaciones suaves, formulario de contacto funcional y optimización SEO. Desarrollado con las mejores prácticas de rendimiento.",
-            image: "/personal-portfolio-website-with-modern-design-and-.jpg",
-            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
-            demoUrl: "https://mi-portfolio.vercel.app",
-            githubUrl: "https://github.com/usuario/portfolio",
-            featured: false,
-        },
-        {
-            id: 6,
-            title: "Blog Platform",
-            description:
-                "Plataforma de blog con editor de texto enriquecido, sistema de comentarios, categorías y búsqueda. Panel de administración para gestión de contenido y usuarios.",
-            image: "/blog-platform-with-rich-text-editor-and-content-ma.jpg",
-            technologies: ["Next.js", "Prisma", "PostgreSQL", "NextAuth.js", "TinyMCE"],
-            demoUrl: "https://blog-platform-demo.vercel.app",
-            githubUrl: "https://github.com/usuario/blog-platform",
+                "Aplicación de matemáticas desarrollado en nextjs utilizando firebase. En esta aplicación los usuarios pueden prácticar cálculos matemáticos con el fin de mejorar sus habilidades de cálculo mental.",
+            image: "/chronomaths.png",
+            technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
+            demoUrl: "https://chronomaths.vercel.app",
+            githubUrl: "https://github.com/DavidLC578/chronomaths",
             featured: false,
         },
     ]
@@ -130,11 +108,11 @@ export function ProjectsSection() {
                 {/* Other Projects */}
                 <div>
                     <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">Otros Proyectos</h3>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className={`grid gap-6 ${otherProjects.length === 1 ? "place-items-center" : "md:grid-cols-2 lg:grid-cols-3"}`}>
                         {otherProjects.map((project) => (
                             <div
                                 key={project.id}
-                                className="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm bg-card border-border overflow-hidden group hover:shadow-md transition-shadow"
+                                className="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm bg-card border-border overflow-hidden group hover:shadow-md transition-shadow max-w-sm"
                             >
                                 <div className="relative overflow-hidden">
                                     <img
