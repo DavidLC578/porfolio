@@ -45,19 +45,19 @@ export function ContactSection() {
         {
             icon: Mail,
             label: "Email",
-            value: "tu@email.com",
-            href: "mailto:tu@email.com",
+            value: "lcdavid578@gmail.com",
+            href: "mailto:lcdavid578@gmail.com",
         },
         {
             icon: Phone,
             label: "Teléfono",
-            value: "+34 123 456 789",
-            href: "tel:+34123456789",
+            value: "+34 684 02 66 31",
+            href: "tel:+34684026631",
         },
         {
             icon: MapPin,
             label: "Ubicación",
-            value: "Madrid, España",
+            value: "Guadalajara, España",
             href: null,
         },
     ]
@@ -66,12 +66,12 @@ export function ContactSection() {
         {
             icon: Github,
             label: "GitHub",
-            href: "https://github.com/usuario",
+            href: "https://github.com/DavidLC578",
         },
         {
             icon: Mail,
             label: "Email",
-            href: "mailto:tu@email.com",
+            href: "mailto:lcdavid578@gmail.com",
         },
     ]
 
