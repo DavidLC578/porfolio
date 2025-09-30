@@ -8,35 +8,13 @@ export function ProjectsSection() {
     const projects = [
         {
             id: 1,
-            title: "E-commerce Dashboard",
+            title: "Valorlink",
             description:
-                "Panel de administración completo para tienda online con gestión de productos, pedidos y análisis de ventas. Incluye autenticación, filtros avanzados y gráficos interactivos.",
-            image: "/modern-ecommerce-dashboard-with-charts-and-product.jpg",
-            technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Chart.js", "Supabase"],
-            demoUrl: "https://demo-ecommerce.vercel.app",
-            githubUrl: "https://github.com/usuario/ecommerce-dashboard",
-            featured: true,
-        },
-        {
-            id: 2,
-            title: "Task Management App",
-            description:
-                "Aplicación de gestión de tareas con funcionalidades de drag & drop, categorización, fechas límite y colaboración en tiempo real. Diseño responsive y modo oscuro.",
-            image: "/task-management-app-with-kanban-board-and-dark-mod.jpg",
-            technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "CSS Modules"],
-            demoUrl: "https://task-manager-demo.vercel.app",
-            githubUrl: "https://github.com/usuario/task-manager",
-            featured: true,
-        },
-        {
-            id: 3,
-            title: "Blog Platform",
-            description:
-                "Plataforma de blog con editor de texto enriquecido, sistema de comentarios, categorías y búsqueda. Panel de administración para gestión de contenido y usuarios.",
-            image: "/blog-platform-with-rich-text-editor-and-content-ma.jpg",
-            technologies: ["Next.js", "Prisma", "PostgreSQL", "NextAuth.js", "TinyMCE"],
-            demoUrl: "https://blog-platform-demo.vercel.app",
-            githubUrl: "https://github.com/usuario/blog-platform",
+                "ValorLink es una plataforma social moderna y con características avanzadas diseñada específicamente para los jugadores de VALORANT que buscan encontrar compañeros de juego compatibles y construir relaciones duraderas en el juego.",
+            image: "/valorlink.png",
+            technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Socket.io", "Supabase"],
+            demoUrl: "https://valorlink.vercel.app",
+            githubUrl: "https://github.com/DavidLC578/Valorlink",
             featured: true,
         },
         {
@@ -90,11 +68,12 @@ export function ProjectsSection() {
                 {/* Featured Projects */}
                 <div className="mb-16">
                     <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">Proyectos Destacados</h3>
-                    <div className="grid lg:grid-cols-2 gap-8">
+                    <div className={`grid gap-8 ${featuredProjects.length === 1 ? "grid-cols-1 place-items-center" : "grid-cols-2"}`}>
                         {featuredProjects.map((project) => (
                             <div
                                 key={project.id}
-                                className="text-card-foreground flex flex-col gap-1 rounded-xl border p-6  shadow-sm bg-card border-border overflow-hidden group hover:shadow-lg transition-shadow"
+                                className={`text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm bg-card border-border overflow-hidden group hover:shadow-lg transition-shadow 
+                                    ${featuredProjects.length === 1 ? "max-w-1/2 " : ""}`}
                             >
                                 <div className="relative overflow-hidden">
                                     <img
@@ -117,10 +96,10 @@ export function ProjectsSection() {
                                         </Button>
                                     </div>
                                 </div>
-                                <div>
+                                <div className="px-6">
                                     <h3 className="text-card-foreground">{project.title}</h3>
                                 </div>
-                                <div className="space-y-4">
+                                <div className="px-6 space-y-4">
                                     <p className="text-muted-foreground text-sm leading-relaxed">{project.description}</p>
                                     <div className="flex flex-wrap gap-2">
                                         {project.technologies.map((tech) => (
