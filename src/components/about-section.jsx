@@ -34,7 +34,7 @@ export function AboutSection() {
                                     <h3 className="text-xl font-semibold text-card-foreground">Mi perfil</h3>
                                 </div>
                                 <p className="text-muted-foreground leading-relaxed mb-6">
-                                    Soy un desarrollador frontend apasionado por crear experiencias web excepcionales. Me especializo en
+                                    Soy un desarrollador fullstack apasionado por crear experiencias web excepcionales. Me especializo en
                                     tecnologías modernas como React y Next.js, siempre buscando escribir código limpio, mantenible y
                                     eficiente.
                                 </p>
