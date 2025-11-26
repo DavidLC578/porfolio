@@ -30,7 +30,7 @@ export function HeroSection() {
 
                 {/* Main Heading */}
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-balance">
-                    Desarrollador Frontend
+                    Desarrollador FullStack
                 </h1>
 
                 {/* Subtitle */}
